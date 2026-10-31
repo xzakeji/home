@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ixiaozhou</title>
+<title>主页</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif}
 body{
@@ -36,7 +36,12 @@ h1{
 .btn-wrap{
     display:flex;
     flex-direction:column;
-    gap:16px;
+    gap:24px;
+}
+.item{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
 }
 a.btn{
     display:block;
@@ -56,11 +61,15 @@ a.btn{
     background:#111;
     color:#fff;
 }
+.btn-donate{
+    background:#fff1e6;
+    color:#ea580c;
+    border:1px solid #fdba74;
+}
 a.btn:hover{transform:translateY(-2px);}
 .tip{
     font-size:13px;
     color:#888;
-    margin-top:6px;
 }
 footer{
     margin-top:40px;
@@ -74,10 +83,16 @@ footer{
     <h1>ixiaozhou</h1>
     <p class="desc">个人站点</p>
     <div class="btn-wrap">
-        <a class="btn btn-encrypt" href="https://jiami.ixiaozhou.com">加密平台</a>
-        <div class="tip">现在不稳定，没有客服接入</div>
-
-        <a class="btn btn-game" href="https://game.ixiaozhou.com">游戏圈</a>
+        <div class="item">
+            <a class="btn btn-encrypt" href="https://jiami.ixiaozhou.com">加密平台</a>
+            <div class="tip">加密平台现在不稳定，没有客服接入</div>
+        </div>
+        <div class="item">
+            <a class="btn btn-game" href="https://game.ixiaozhou.com">游戏圈</a>
+        </div>
+        <div class="item">
+            <a class="btn btn-donate" href="https://afdian.com/a/ixiaozhou/plan">打赏支持</a>
+        </div>
     </div>
 </div>
 <footer>© ixiaozhou.com</footer>
